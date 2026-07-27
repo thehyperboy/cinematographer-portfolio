@@ -11,7 +11,8 @@ const InstagramWork = () => {
       image: "/echoes_of_silence.jpg",
       caption: "Echoes of Silence (2024)",
       rotation: "-rotate-3",
-      aspect: "aspect-[4/3]"
+      aspect: "aspect-[4/3]",
+      href: "https://www.instagram.com/reel/DVVyNvIgVAf/?igsh=MWR0cGdpd2UyOGZsMw=="
     },
     {
       id: 2,
@@ -56,7 +57,7 @@ const InstagramWork = () => {
           {posts.map((post) => (
             <motion.a
               key={post.id}
-              href={instagramUrl}
+              href={post.href || instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="block group"
