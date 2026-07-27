@@ -4,14 +4,8 @@ import { motion } from 'framer-motion';
 
 const EquipmentSkills = () => {
   const gearItems = [
-    { name: "Sony FX3", type: "Primary Cinema Camera", spec: "10-bit 4:2:2, 120fps, S-Log3/S-Cinetone" },
-    { name: "Sony A7IV", type: "B-Cam & Stills", spec: "33MP, 10-bit 4K video, hybrid shooting" },
-    { name: "Blackmagic Pocket 6K", type: "RAW Cinematic Rig", spec: "Super 35 sensor, Blackmagic RAW, EF mount" },
-    { name: "DJI RS4 Pro", type: "Camera Gimbal Stabilization", spec: "ActiveTrack Pro, LiDAR focusing support" },
-    { name: "DJI Mini 4 Pro", type: "Cinematic Drone", spec: "4K60 HDR, vertical shooting, 10-bit D-Log M" },
-    { name: "Sigma Art Lenses", type: "Prime Lens Set", spec: "24mm, 35mm, 50mm, 85mm F1.4 bokeh" },
-    { name: "Nanlite Forza Lights", type: "Studio Light Setups", spec: "Forza 500 & 60B bi-color, softboxes, spot lenses" },
-    { name: "Rode Wireless GO II", type: "Production Audio Setup", spec: "Dual channel, on-board recording, lavs" }
+    { name: "iPhone 16 Pro", type: "Mobile Cinema Camera / Viewfinder", spec: "ProRes Log, Academy color pipeline, 4K120 Cinematic slow-mo" },
+    { name: "Fluid Head Tripod", type: "Camera Support & Stabilization", spec: "Smooth fluid drag control, heavy payload capacity, precise leveling" }
   ];
 
   const skillTags = [
