@@ -118,23 +118,50 @@ function App() {
                 className="absolute right-0 mt-2 w-48 bg-white border border-charcoal/10 shadow-xl rounded-md overflow-hidden z-50 flex flex-col font-mono text-[10px] uppercase tracking-wider text-charcoal contact-dropdown"
                 style={{ borderRadius: '8px' }}
               >
+                {/* Book a Shoot Section */}
+                <div className="px-3 py-1.5 bg-ivory text-[8px] font-bold text-charcoal/40 border-b border-charcoal/5">
+                  Book a Shoot
+                </div>
                 <a 
-                  href="https://wa.me/917993082040" 
+                  href="https://wa.me/917993082040?text=Hi%20Srinivas,%20I%20would%20like%20to%20book%20a%20shoot%20with%20you!" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="px-4 py-3 hover:bg-kodak/25 transition-colors border-b border-charcoal/5 flex items-center gap-2.5 font-bold"
+                  className="px-4 py-2 hover:bg-kodak/25 transition-colors border-b border-charcoal/5 flex items-center gap-2.5 font-bold"
                   onClick={() => setContactDropdownOpen(false)}
                 >
-                  <MessageSquare className="w-4 h-4 text-emerald-600" />
-                  <span>WhatsApp Chat</span>
+                  <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>via WhatsApp</span>
                 </a>
                 <a 
-                  href="mailto:chintusrinivas020@gmail.com" 
-                  className="px-4 py-3 hover:bg-kodak/25 transition-colors flex items-center gap-2.5 font-bold"
+                  href="mailto:chintusrinivas020@gmail.com?subject=Book%20a%20Shoot" 
+                  className="px-4 py-2 hover:bg-kodak/25 transition-colors border-b border-charcoal/5 flex items-center gap-2.5 font-bold"
                   onClick={() => setContactDropdownOpen(false)}
                 >
-                  <Mail className="w-4 h-4 text-rose-600" />
-                  <span>Send Email</span>
+                  <Mail className="w-3.5 h-3.5 text-rose-600" />
+                  <span>via Email</span>
+                </a>
+
+                {/* Let's Collaborate Section */}
+                <div className="px-3 py-1.5 bg-ivory text-[8px] font-bold text-charcoal/40 border-b border-charcoal/5">
+                  Let's Collaborate
+                </div>
+                <a 
+                  href="https://wa.me/917993082040?text=Hi%20Srinivas,%20I'm%20interested%20in%20collaborating%20with%20you!" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 hover:bg-kodak/25 transition-colors border-b border-charcoal/5 flex items-center gap-2.5 font-bold"
+                  onClick={() => setContactDropdownOpen(false)}
+                >
+                  <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>via WhatsApp</span>
+                </a>
+                <a 
+                  href="mailto:chintusrinivas020@gmail.com?subject=Collaboration%20Inquiry" 
+                  className="px-4 py-2 hover:bg-kodak/25 transition-colors flex items-center gap-2.5 font-bold"
+                  onClick={() => setContactDropdownOpen(false)}
+                >
+                  <Mail className="w-3.5 h-3.5 text-rose-600" />
+                  <span>via Email</span>
                 </a>
               </div>
             )}
