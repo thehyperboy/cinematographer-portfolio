@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Lenis from 'lenis';
+import { Mail, MessageSquare } from 'lucide-react';
 import FilmGrainOverlay from './components/FilmGrainOverlay';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,6 +13,19 @@ import Footer from './components/Footer';
 
 function App() {
   const [shutterOpen, setShutterOpen] = useState(false);
+  const [contactDropdownOpen, setContactDropdownOpen] = useState(false);
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    if (!contactDropdownOpen) return;
+    const handleOutsideClick = (e) => {
+      if (!e.target.closest('#nav-btn-contact') && !e.target.closest('.contact-dropdown')) {
+        setContactDropdownOpen(false);
+      }
+    };
+    document.addEventListener('click', handleOutsideClick);
+    return () => document.removeEventListener('click', handleOutsideClick);
+  }, [contactDropdownOpen]);
 
   // Initialize Lenis Smooth Scroll
   useEffect(() => {
@@ -89,13 +103,42 @@ function App() {
             <a href="#work" className="hover:text-kodak-orange transition-colors">Recent Works</a>
             <a href="#process" className="hover:text-kodak-orange transition-colors font-bold text-film-red">Process</a>
           </nav>
-          <a 
-            href="#contact" 
-            className="px-4 py-2 bg-charcoal text-white font-mono text-[9px] uppercase tracking-widest font-black rounded hover:bg-kodak hover:text-charcoal transition-all"
-            id="nav-btn-contact"
-          >
-            Get In Touch
-          </a>
+          <div className="relative">
+            <button 
+              onClick={() => setContactDropdownOpen(!contactDropdownOpen)}
+              className="px-4 py-2 bg-charcoal text-white font-mono text-[9px] uppercase tracking-widest font-black rounded hover:bg-kodak hover:text-charcoal transition-all flex items-center gap-1.5"
+              id="nav-btn-contact"
+            >
+              <span>Get In Touch</span>
+              <span className={`transition-transform duration-200 text-[8px] ${contactDropdownOpen ? 'rotate-180' : ''}`}>▼</span>
+            </button>
+            
+            {contactDropdownOpen && (
+              <div 
+                className="absolute right-0 mt-2 w-48 bg-white border border-charcoal/10 shadow-xl rounded-md overflow-hidden z-50 flex flex-col font-mono text-[10px] uppercase tracking-wider text-charcoal contact-dropdown"
+                style={{ borderRadius: '8px' }}
+              >
+                <a 
+                  href="https://wa.me/917993082040" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-4 py-3 hover:bg-kodak/25 transition-colors border-b border-charcoal/5 flex items-center gap-2.5 font-bold"
+                  onClick={() => setContactDropdownOpen(false)}
+                >
+                  <MessageSquare className="w-4 h-4 text-emerald-600" />
+                  <span>WhatsApp Chat</span>
+                </a>
+                <a 
+                  href="mailto:chintusrinivas020@gmail.com" 
+                  className="px-4 py-3 hover:bg-kodak/25 transition-colors flex items-center gap-2.5 font-bold"
+                  onClick={() => setContactDropdownOpen(false)}
+                >
+                  <Mail className="w-4 h-4 text-rose-600" />
+                  <span>Send Email</span>
+                </a>
+              </div>
+            )}
+          </div>
         </header>
 
         {/* Portfolio Sections */}
