@@ -27,7 +27,8 @@ const InstagramWork = () => {
       image: "/dust_and_dreams.jpg",
       caption: "Dust & Dreams - Docu (2023)",
       rotation: "-rotate-1",
-      aspect: "aspect-[4/3]"
+      aspect: "aspect-[4/3]",
+      href: "https://www.instagram.com/reel/DSrWq2_gckh/?igsh=YWI1NmdoNHJsbmwx"
     }
   ];
 
