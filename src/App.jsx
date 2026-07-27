@@ -3,7 +3,7 @@ import Lenis from 'lenis';
 import FilmGrainOverlay from './components/FilmGrainOverlay';
 import Hero from './components/Hero';
 import About from './components/About';
-import EducationExperience from './components/EducationExperience';
+
 import EquipmentSkills from './components/EquipmentSkills';
 import InstagramWork from './components/InstagramWork';
 import CinematicGallery from './components/CinematicGallery';
@@ -88,7 +88,6 @@ function App() {
           </a>
           <nav className="hidden sm:flex items-center gap-8 font-mono text-[10px] uppercase tracking-widest text-charcoal/70">
             <a href="#about" className="hover:text-kodak-orange transition-colors">About</a>
-            <a href="#career" className="hover:text-kodak-orange transition-colors">Experience</a>
             <a href="#work" className="hover:text-kodak-orange transition-colors">Recent Works</a>
             <a href="#gallery" className="hover:text-kodak-orange transition-colors">Stills</a>
             <a href="#bts" className="hover:text-kodak-orange transition-colors">BTS</a>
@@ -106,7 +105,7 @@ function App() {
         {/* Portfolio Sections */}
         <Hero />
         <About />
-        <EducationExperience />
+
         <EquipmentSkills />
         <InstagramWork />
         <CinematicGallery />
