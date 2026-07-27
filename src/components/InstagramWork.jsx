@@ -9,7 +9,7 @@ const InstagramWork = () => {
     {
       id: 1,
       image: "/echoes_of_silence.jpg",
-      caption: "Echoes of Silence (2024)",
+      caption: "Work 01",
       rotation: "-rotate-3",
       aspect: "aspect-[4/3]",
       href: "https://www.instagram.com/reel/DVVyNvIgVAf/?igsh=MWR0cGdpd2UyOGZsMw=="
@@ -17,7 +17,7 @@ const InstagramWork = () => {
     {
       id: 2,
       image: "/chasing_shadows.jpg",
-      caption: "Chasing Shadows - Noir (2025)",
+      caption: "Work 02",
       rotation: "rotate-2",
       aspect: "aspect-square",
       href: "https://www.instagram.com/reel/DSaTRe6AcJp/?igsh=YW01ZG4zZzJmdnI="
@@ -25,7 +25,7 @@ const InstagramWork = () => {
     {
       id: 3,
       image: "/dust_and_dreams.jpg",
-      caption: "Dust & Dreams - Docu (2023)",
+      caption: "Work 03",
       rotation: "-rotate-1",
       aspect: "aspect-[4/3]",
       href: "https://www.instagram.com/reel/DSrWq2_gckh/?igsh=YWI1NmdoNHJsbmwx"
