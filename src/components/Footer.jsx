@@ -48,7 +48,7 @@ const Footer = () => {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
             <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=chintusrinivas020@gmail.com&su=Book%20a%20Shoot" 
+              href="https://wa.me/917993082040?text=Hi%20Srinivas,%20I%20would%20like%20to%20book%20a%20shoot%20with%20you!" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-kodak text-charcoal font-mono text-xs uppercase tracking-widest font-black rounded hover:bg-[#FFD43B]/80 shadow-lg transform hover:-translate-y-0.5 transition-all"
@@ -59,7 +59,7 @@ const Footer = () => {
             </a>
             
             <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=chintusrinivas020@gmail.com&su=Collaboration%20Inquiry" 
+              href="https://wa.me/917993082040?text=Hi%20Srinivas,%20I'm%20interested%20in%20collaborating%20with%20you!" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-transparent border-2 border-white/30 text-white font-mono text-xs uppercase tracking-widest font-black rounded hover:border-white hover:bg-white/5 transition-all"
