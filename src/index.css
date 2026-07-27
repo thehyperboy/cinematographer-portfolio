@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: initial; /* Managed by Lenis */
+  }
+
+  body {
+    background-color: #F7F4EC;
+    color: #1B1B1B;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+}
+
+@layer components {
+  /* Film Grain Effect */
+  .film-grain {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200%;
+    background: transparent url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E') repeat;
+    opacity: 0.055;
+    pointer-events: none;
+    z-index: 9999;
+    animation: grain 8s steps(10) infinite;
+  }
+
+  /* Paper Texture Background */
+  .paper-texture {
+    background-color: #F7F4EC;
+    background-image: 
+      radial-gradient(rgba(27, 27, 27, 0.03) 1px, transparent 0),
+      radial-gradient(rgba(27, 27, 27, 0.02) 1px, transparent 0);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+  }
+
+  /* Dark Paper Texture */
+  .dark-paper-texture {
+    background-color: #1B1B1B;
+    background-image: 
+      radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0),
+      radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 0);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+  }
+
+  /* Polaroid Frame styling */
+  .polaroid-frame {
+    background: #FFFFFF;
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.06), 
+      0 12px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(27, 27, 27, 0.05);
+    padding: 16px 16px 48px 16px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  /* Masking Tape */
+  .masking-tape {
+    background: rgba(246, 238, 203, 0.75);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-left: 1px dashed rgba(0,0,0,0.1);
+    border-right: 1px dashed rgba(0,0,0,0.1);
+    position: relative;
+  }
+  .masking-tape::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: -4px; right: -4px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  /* Notebook Paper Lines */
+  .notebook-paper {
+    background: #FFFFFF;
+    background-image: linear-gradient(#e2e8f0 1.1px, transparent 1.1px);
+    background-size: 100% 2rem;
+    line-height: 2rem;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  }
+  .notebook-paper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3.5rem;
+    width: 2px;
+    background-color: rgba(239, 68, 68, 0.4); /* Red margin line */
+  }
+
+  /* Cinema Ticket styling */
+  .cinema-ticket {
+    background-color: #FFD43B;
+    color: #1B1B1B;
+    position: relative;
+    mask-image: radial-gradient(circle at left, transparent 12px, black 13px), radial-gradient(circle at right, transparent 12px, black 13px);
+    mask-position: left, right;
+    mask-size: 100% 100%;
+  }
+
+  /* Torn Paper Edge */
+  .torn-edge-bottom {
+    position: relative;
+  }
+  .torn-edge-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 12' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C150,3 350,8 500,4 C650,0 800,7 950,5 C1100,3 1200,0 1200,0 L1200,12 L0,12 Z' fill='%23F7F4EC'/%3E%3C/svg%3E");
+    background-size: 100% 12px;
+    z-index: 10;
+  }
+
+  .torn-edge-top {
+    position: relative;
+  }
+  .torn-edge-top::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 12' preserveAspectRatio='none'%3E%3Cpath d='M0,12 C150,9 350,4 500,8 C650,12 800,5 950,7 C1100,9 1200,12 1200,12 L1200,0 L0,0 Z' fill='%23F7F4EC'/%3E%3C/svg%3E");
+    background-size: 100% 12px;
+    z-index: 10;
+  }
+
+  /* Stamped Text */
+  .stamp-text {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    color: #D62828;
+    border: 3px double #D62828;
+    padding: 2px 8px;
+    display: inline-block;
+    transform: rotate(-3deg);
+    font-family: monospace;
+    opacity: 0.85;
+    mix-blend-mode: multiply;
+  }
+
+  /* Sticky Note */
+  .sticky-note {
+    box-shadow: 
+      3px 3px 10px rgba(0, 0, 0, 0.05),
+      -1px 5px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F4EC;
+  border-left: 1px solid rgba(27,27,27,0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: #1B1B1B;
+  border: 2px solid #F7F4EC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD43B;
+}
+
+/* Viewfinder Crosshair */
+.viewfinder-crosshair {
+  position: relative;
+}
+.viewfinder-crosshair::before,
+.viewfinder-crosshair::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+}
+.viewfinder-crosshair::before {
+  top: 50%; left: 0; right: 0; height: 1px; transform: translateY(-50%);
+}
+.viewfinder-crosshair::after {
+  left: 50%; top: 0; bottom: 0; width: 1px; transform: translateX(-50%);
+}
