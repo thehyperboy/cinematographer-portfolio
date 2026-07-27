@@ -11,7 +11,7 @@ const About = () => {
       icon: <Mail className="w-5 h-5 text-film-red" />, 
       color: 'bg-red-50 border-film-red/30 text-film-red', 
       rotation: '-rotate-3',
-      href: 'mailto:chintusrinivas020@gmail.com'
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=chintusrinivas020@gmail.com'
     },
     { 
       id: 'phone', 
@@ -146,7 +146,7 @@ const About = () => {
                 <a
                   key={sticker.id}
                   href={sticker.href}
-                  target={sticker.id !== 'email' && sticker.id !== 'phone' ? '_blank' : undefined}
+                  target={sticker.id !== 'phone' ? '_blank' : undefined}
                   rel="noopener noreferrer"
                   className={`inline-flex items-center gap-2.5 px-4 py-2 bg-white rounded-lg border-2 border-charcoal/10 shadow-sm font-mono text-xs uppercase tracking-wider font-semibold hover:shadow-md hover:-translate-y-1 hover:rotate-0 transition-all duration-300 ${sticker.rotation} ${sticker.color}`}
                   style={{ borderRadius: '12px 14px 11px 15px' }}

@@ -133,7 +133,9 @@ function App() {
                   <span>via WhatsApp</span>
                 </a>
                 <a 
-                  href="mailto:chintusrinivas020@gmail.com?subject=Book%20a%20Shoot" 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=chintusrinivas020@gmail.com&su=Book%20a%20Shoot" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-4 py-2 hover:bg-kodak/25 transition-colors border-b border-charcoal/5 flex items-center gap-2.5 font-bold"
                   onClick={() => setContactDropdownOpen(false)}
                 >
@@ -156,7 +158,9 @@ function App() {
                   <span>via WhatsApp</span>
                 </a>
                 <a 
-                  href="mailto:chintusrinivas020@gmail.com?subject=Collaboration%20Inquiry" 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=chintusrinivas020@gmail.com&su=Collaboration%20Inquiry" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-4 py-2 hover:bg-kodak/25 transition-colors flex items-center gap-2.5 font-bold"
                   onClick={() => setContactDropdownOpen(false)}
                 >
