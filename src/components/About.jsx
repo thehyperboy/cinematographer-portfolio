@@ -7,20 +7,20 @@ const About = () => {
     { 
       id: 'email', 
       label: 'Email Me', 
-      value: 'srinivas.dop@gmail.com', 
+      value: 'chintusrinivas020@gmail.com', 
       icon: <Mail className="w-5 h-5 text-film-red" />, 
       color: 'bg-red-50 border-film-red/30 text-film-red', 
       rotation: '-rotate-3',
-      href: 'mailto:srinivas.dop@gmail.com'
+      href: 'mailto:chintusrinivas020@gmail.com'
     },
     { 
       id: 'phone', 
       label: 'Call Me', 
-      value: '+91 99887 76655', 
+      value: '+91 79930 82040', 
       icon: <Phone className="w-5 h-5 text-film-green" />, 
       color: 'bg-emerald-50 border-film-green/30 text-film-green', 
       rotation: 'rotate-2',
-      href: 'tel:+919988776655'
+      href: 'tel:+917993082040'
     },
     { 
       id: 'instagram', 

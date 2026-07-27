@@ -48,7 +48,7 @@ const Footer = () => {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
             <a 
-              href="mailto:srinivas.dop@gmail.com?subject=Book%20a%20Shoot" 
+              href="mailto:chintusrinivas020@gmail.com?subject=Book%20a%20Shoot" 
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-kodak text-charcoal font-mono text-xs uppercase tracking-widest font-black rounded hover:bg-[#FFD43B]/80 shadow-lg transform hover:-translate-y-0.5 transition-all"
               id="cta-book"
             >
@@ -57,7 +57,7 @@ const Footer = () => {
             </a>
             
             <a 
-              href="mailto:srinivas.dop@gmail.com?subject=Collaboration%20Inquiry" 
+              href="mailto:chintusrinivas020@gmail.com?subject=Collaboration%20Inquiry" 
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-transparent border-2 border-white/30 text-white font-mono text-xs uppercase tracking-widest font-black rounded hover:border-white hover:bg-white/5 transition-all"
               id="cta-collab"
             >
