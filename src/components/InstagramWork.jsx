@@ -29,6 +29,14 @@ const InstagramWork = () => {
       rotation: "-rotate-1",
       aspect: "aspect-[4/3]",
       href: "https://www.instagram.com/reel/DSrWq2_gckh/?igsh=YWI1NmdoNHJsbmwx"
+    },
+    {
+      id: 4,
+      image: "/echoes_of_silence.jpg",
+      caption: "Work 04",
+      rotation: "rotate-3",
+      aspect: "aspect-square",
+      href: "https://www.instagram.com/reel/DYwtyegTDoW/?igsh=ZWhkZHpqNjlxdHAw"
     }
   ];
 
@@ -55,7 +63,7 @@ const InstagramWork = () => {
         </div>
 
         {/* Polaroid/Film Strip Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center mb-16">
           {posts.map((post) => (
             <motion.a
               key={post.id}
