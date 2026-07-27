@@ -8,7 +8,6 @@ import EquipmentSkills from './components/EquipmentSkills';
 import InstagramWork from './components/InstagramWork';
 
 import CreativeProcess from './components/CreativeProcess';
-import AwardsTestimonials from './components/AwardsTestimonials';
 import Footer from './components/Footer';
 
 function App() {
@@ -107,7 +106,6 @@ function App() {
         <InstagramWork />
 
         <CreativeProcess />
-        <AwardsTestimonials />
         <Footer />
       </main>
 
