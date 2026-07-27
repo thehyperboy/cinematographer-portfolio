@@ -19,7 +19,8 @@ const InstagramWork = () => {
       image: "/chasing_shadows.jpg",
       caption: "Chasing Shadows - Noir (2025)",
       rotation: "rotate-2",
-      aspect: "aspect-square"
+      aspect: "aspect-square",
+      href: "https://www.instagram.com/reel/DSaTRe6AcJp/?igsh=YW01ZG4zZzJmdnI="
     },
     {
       id: 3,
