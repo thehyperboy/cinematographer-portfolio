@@ -6,8 +6,7 @@ import About from './components/About';
 
 import EquipmentSkills from './components/EquipmentSkills';
 import InstagramWork from './components/InstagramWork';
-import CinematicGallery from './components/CinematicGallery';
-import BehindTheCamera from './components/BehindTheCamera';
+
 import CreativeProcess from './components/CreativeProcess';
 import AwardsTestimonials from './components/AwardsTestimonials';
 import Footer from './components/Footer';
@@ -89,8 +88,6 @@ function App() {
           <nav className="hidden sm:flex items-center gap-8 font-mono text-[10px] uppercase tracking-widest text-charcoal/70">
             <a href="#about" className="hover:text-kodak-orange transition-colors">About</a>
             <a href="#work" className="hover:text-kodak-orange transition-colors">Recent Works</a>
-            <a href="#gallery" className="hover:text-kodak-orange transition-colors">Stills</a>
-            <a href="#bts" className="hover:text-kodak-orange transition-colors">BTS</a>
             <a href="#process" className="hover:text-kodak-orange transition-colors font-bold text-film-red">Process</a>
           </nav>
           <a 
@@ -108,8 +105,7 @@ function App() {
 
         <EquipmentSkills />
         <InstagramWork />
-        <CinematicGallery />
-        <BehindTheCamera />
+
         <CreativeProcess />
         <AwardsTestimonials />
         <Footer />
